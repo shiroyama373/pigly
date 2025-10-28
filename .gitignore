@@ -1,0 +1,58 @@
+# 親ディレクトリのファイルを無視
+../Mogitate/
+../Mogitate_test/
+../Desktop/
+../Documents/
+../Downloads/
+../Movies/
+../Music/
+../Pictures/
+../Public/
+
+# システムファイルやキャッシュ
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+
+# PHP / Composer / Laravel 関連
+/vendor/
+/node_modules/
+/.env
+.phpunit.result.cache
+/storage/*.key
+
+# macOS 系
+.DS_Store
+.Trash/
+*.swp
+*.swo
+
+# エディタ・IDE
+.vscode/
+.idea/
+*.iml
+
+# Composer / PHP
+vendor/
+composer.lock
+
+# Docker 関連
+.env
+*.env
+docker-compose.override.yml
+
+# ビルド・キャッシュ関連
+node_modules/
+npm-debug.log
+yarn-error.log
+*.log
+*.tmp
+
+# その他 OS やシステムファイル
+*.bak
+*.old
+*.swp
+*.orig
+src/
