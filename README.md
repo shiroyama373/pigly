@@ -4,6 +4,7 @@
 
 
 ### Dockerビルド
+
 1.git clone https://github.com/shiroyama373/pigly.git
 2.docker-compose up -d --build
 ＊ MySQL は OS によって起動しない場合があります。その場合は、docker-compose.yml ファイルを編集し、それぞれの PC に合わせて調整してください。
@@ -14,19 +15,22 @@
 3.cp .env.example .env
 ※ 必要に応じて .env のDB設定を docker-compose.yml に合わせて変更
 4.php artisan key:generate
-5.php artisan migrate
-  php artisan db:seed
+5.php artisan migrate --seed
 6.php artisan storage:link
 
 
 ### 使用技術
 - PHP: 8.3.24
 - Laravel: 10.49.1
-- MySQL: 9.4
+- MySQL: 8.0.43
 
 ## URL
-	•	開発環境（アプリ）: http://localhost:8083
+	•	開発環境（アプリ）: http://localhost:8000
 	•	phpMyAdmin: http://localhost:8082
+
+## ER 図
+
+![ER図](er_diagram.png)
 
 
 ダミーデータについて
