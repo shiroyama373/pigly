@@ -15,14 +15,16 @@
 1. docker-compose exec app bash
 2. composer install
 3. cp .env.example .env
-※ 必要に応じて .env のDB設定を docker-compose.yml に合わせて変更
+   - `.env.example` をコピーして `.env` を作成してください  
+   - `.env` の DB 設定は自分の環境に合わせて変更できます  
+   - `APP_KEY` はコピーしても良いですが、必要に応じて `php artisan key:generate` で再生成できます
 4. php artisan key:generate
 5. php artisan migrate --seed
 6. php artisan storage:link
 
 
 ### 使用技術
-- PHP: 8.3.24
+- PHP: 8.3.27
 - Laravel: 10.49.1
 - MySQL: 8.0.43
 
