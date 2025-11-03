@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 50px 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 650px;
+    max-width: 95%;
+    min-height: 600px;
+    height: auto;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.login-box .logo {
+    font-family: 'Merriweather', serif;
+    font-size: 60px;
+    font-weight: 300;
+    color: #f0a6de;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.login-box .subtitle {
+    text-align: center;
+    font-size: 35px;
+    color: #000000;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 15px 18px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.step2-input-wrapper input::placeholder {
+    color: #aaa;       /* 薄いグレー */
+    font-size: 1rem; 
+}
+
+/* ログインボタン */
+.login-box button {
+    background: linear-gradient(90deg, #e690f3, #FFB6B6);
+    color: #fff;
+    border: none;
+    padding: 12px 16px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 50%;
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-box button:hover {
+    background: linear-gradient(90deg, #FFB6B6, #ff99c8);
+}
+
+/* アカウント作成リンク */
+.login-box .link {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    color: #007BFF;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.login-box .link:hover {
+    text-decoration: underline;
+}
+
+/* エラー表示 */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
+}
+
+/* 認証エラー全体（ログインボックス下など） */
+.auth-error-box {
+    background-color: #ffe6e6;
+    border: 1px solid #f5b5b5;
+    color: #d32f2f;
+    border-radius: 10px;
+    padding: 12px 18px;
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 0.95em;
+    width: 90%;
+    box-sizing: border-box;
+}

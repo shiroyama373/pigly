@@ -1,0 +1,96 @@
+/* =================================================
+   目標体重設定ボックス
+================================================= */
+/* 画面全体のラッパー */
+.auth-page .page-wrapper {
+    display: flex;
+    justify-content: center;  /* 横中央 */
+    align-items: center;      /* 縦中央 */
+    min-height: calc(100vh - 80px); /* ヘッダー分を引く */
+    padding: 20px;
+}
+
+
+.weight-box {
+    background: #fff;
+    max-width: 600px;       /* ボックス幅 */
+    width: 90%;             /* レスポンシブ対応 */
+    padding: 60px;          /* 内側余白 */
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* タイトル */
+.weight-box h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    margin-top: -20px;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+.weight-box .input-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* 左寄せ */
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.weight-box .input-group input {
+    flex: 1;
+    padding: 15px 20px;
+    font-size: 1.4rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.weight-box .input-group input::placeholder {
+    color: #ccc;
+    font-size: 1.4rem;
+}
+
+.weight-box .input-group .unit {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #555;
+}
+
+/* エラーメッセージ */
+.weight-box .error-message {
+    display: block; 
+    color: red;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+/* ボタンを中央寄せにする */
+.weight-box .form-buttons {
+    display: flex;
+    justify-content: center;  /* 中央寄せ */
+    gap: 20px;                /* ボタン間の隙間 */
+    margin-top: 50px;
+}
+
+/* ボタンの大きさを調整 */
+.weight-box .btn {
+    padding: 15px 120px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* グレーの戻るボタン */
+.weight-box .gray-btn {
+    background: #ccc;
+    color: #000;
+}
+
+/* グラデーションの更新ボタン */
+.weight-box .gradient-btn {
+    background: linear-gradient(135deg, #ff6ec7, #a064f5);
+    color: #fff;
+}

@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.step1-form-box {
+    background-color: #fff;
+    padding: 50px 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 650px;       /* ← 固定幅で大きく */
+    max-width: 95%;     /* ← 小さい画面では縮小 */
+    min-height: 800px;  /* 縦も大きく */
+    height: auto;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.step1-form-box .logo {
+    font-family: 'Merriweather', serif;
+    font-size: 60px;
+    font-weight: 300;
+    color: #f0a6de;
+    margin-bottom: 25px;
+    text-align: center; /* ロゴは中央 */
+}
+
+.step1-form-box .subtitle {
+    text-align: center;     /* ロゴと同じく中央寄せ */
+    font-size: 35px;        /* お好みのサイズに調整 */
+    color: #000000;         /* 黒文字 */
+    margin-bottom: 20px;    /* ロゴとの間隔 */
+    font-weight: normal;    /* 必要に応じて調整 */
+}
+
+.step-title {
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    margin-top: 30px;    /* 「新規会員登録」との間にスペース */
+    margin-bottom: 30px; /* フォームとの間にスペース */
+    font-weight: 500;
+}
+
+.form-group {
+    margin-bottom: 45px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 15px 18px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* アカウント作成ボタン */
+.step1-form-box button {
+    background: linear-gradient(90deg, #e690f3, #FFB6B6); /* 左→右のピンクオレンジグラデーション */
+    color: #fff;
+    border: none;
+    padding: 12px 16px;
+    margin-top: 20px; /* 上余白を少し広め */
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+     width: 50%;         /* ← 横幅を小さく */
+    max-width: 300px;   /* 任意で最大幅を設定 */
+    text-align: center;
+    display: block;
+    margin-left: auto;  /* 中央寄せ */
+    margin-right: auto; /* 中央寄せ */
+}
+
+
+.step1-form-box button:hover {
+    background: linear-gradient(90deg, #FFB6B6, #ff99c8); /* ホバー時にグラデーション反転 */
+}
+
+/* ログインリンク */
+.step1-form-box .link {
+    display: block;
+    text-align: center; /* 中央揃え */
+    margin-top: 40px;   /* ボタンとの間隔を広めに */
+    color: #007BFF;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.step1-form-box .link:hover {
+    text-decoration: underline;
+}
+
+.step1-form-box input::placeholder {
+    color: #aaa;      /* 薄いグレー */
+}
+
+/* エラー表示 */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}

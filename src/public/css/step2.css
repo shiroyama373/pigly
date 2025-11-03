@@ -1,0 +1,135 @@
+/* ======================================
+   全体設定
+====================================== */
+body {
+    display: flex;
+    justify-content: center; /* 横方向中央 */
+    align-items: center;     /* 縦方向中央 */
+    min-height: 100vh;       /* ビューポート全体の高さ */
+    margin: 0;
+}
+
+/* ======================================
+   白い中央ボックス
+====================================== */
+.step2-container {
+    background-color: #fff;
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    max-width: 95%;
+    min-height: 700px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+/* ======================================
+   ロゴ・タイトル・STEPラベル
+====================================== */
+.step2-container .logo {
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+    font-weight: 300;
+    color: #f0a6de;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.step2-container .subtitle {
+    font-size: 28px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.step2-container .step-label {
+    font-size: 18px;
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* ======================================
+   フォームグループ
+====================================== */
+.form-group {
+    margin-bottom: 40px;
+}
+
+.form-group label {
+    font-size: 18px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* ======================================
+   入力欄＋kg表示
+====================================== */
+.step2-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.step2-input-wrapper input {
+    flex: 1;
+    padding: 20px 15px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.step2-input-wrapper span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* ======================================
+   エラー表示
+====================================== */
+.step2-error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
+}
+
+/* ======================================
+   登録ボタン
+====================================== */
+.step2-button {
+    width: 50%;
+    max-width: 300px;
+    display: block;
+    margin: 60px auto 0;
+    padding: 20px 0;
+    background: linear-gradient(90deg, #e690f3, #FFB6B6);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background 0.2s;
+}
+
+.step2-button:hover {
+    background: linear-gradient(90deg, #FFB6B6, #ff99c8);
+}
+
+/* ======================================
+   number input の矢印削除
+====================================== */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}

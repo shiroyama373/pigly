@@ -1,0 +1,97 @@
+/* ======================================
+   ボディと背景
+====================================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #e6e6fa 0%,
+        #ff99c8 40%,
+        #FFB6B6 70%,
+        #FFB6B6 100%
+    );
+}
+
+/* body.auth-page はログイン・目標体重ページ用の背景 */
+body.auth-page {
+    background: #f5f5f5;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* ======================================
+   ヘッダー共通
+====================================== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 30px 20px;
+}
+
+.header .logo {
+    font-family: 'Merriweather', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ff4fa3;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* ヘッダー専用ボタンは必ず共通ボタンより後に書く */
+.header-buttons .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 1.1rem;
+    height: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.header-buttons .target-weight-btn {
+    width: 150px;
+}
+
+.header-buttons .logout-btn button {
+    width: 200px;
+}
+
+/* ======================================
+   共通ボタン（ページ全体で使うボタン）
+====================================== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn svg {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+}
+
+.header-buttons .gray-btn {
+  background: #eee;
+  color: #000;
+  padding: 0 30px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
